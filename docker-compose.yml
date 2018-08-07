@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  brook1:
+    image: ourob/brook-docker
+    container_name: brook1
+    restart: always
+    ports:
+      - "8081:9999"
+    command: ["server","-l",":9999","-p","fuck8081"]
+
+   brook2:
+    image: ourob/brook-docker
+    container_name: brook2
+    restart: always
+    ports:
+      - "8082:9999"
+    command: ["server","-l",":9999","-p","fuck8082"] 

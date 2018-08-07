@@ -8,6 +8,6 @@ RUN  chmod +x /usr/bin/brook
 
 EXPOSE 9999
 
-CMD ["server","-l",":9999","-p","$password"]
+CMD ["server","-l",":9999","-p","brook9999"]
 
 ENTRYPOINT ["brook"]
