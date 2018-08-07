@@ -6,6 +6,8 @@ COPY brook_v20180707 /usr/bin/brook
 
 RUN  chmod +x /usr/bin/brook 
 
+EXPOSE 9999
+
 CMD ["server","-l",":9999","-p","$password"]
 
 ENTRYPOINT ["brook"]
